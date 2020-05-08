@@ -1,0 +1,36 @@
+\Scheduling
+
+Minimize
+ obj: x61(0,Inf) + 2 x62(0,Inf) + 2 x72(0,Inf) + 3 x73(0,Inf) + x81(0,Inf) + 2 x82(0,Inf) + 3 x83(0,Inf) + 2 x92(0,Inf) + 3 x93(0,Inf) + 4 x94(0,Inf) + x101(0,Inf) + 2 x102(0,Inf) + 3 x103(0,Inf) + 2 x112(0,Inf) + 3 x113(0,Inf) + 4 x114(0,Inf)
+
+Subject To
+ c1:	x11(0,Inf) = 1
+ c2:	x32(0,Inf) = 1
+ c3:	x21(0,Inf) = 1
+ c4:	x43(0,Inf) = 1
+ c5:	x54(0,Inf) = 1
+ c6:	x01(0,Inf) = 1
+ c7:	x61(0,Inf) + x62(0,Inf) = 1
+ c8:	x72(0,Inf) + x73(0,Inf) = 1
+ c9:	x81(0,Inf) + x82(0,Inf) + x83(0,Inf) = 1
+ c10:	x92(0,Inf) + x93(0,Inf) + x94(0,Inf) = 1
+ c11:	x101(0,Inf) + x102(0,Inf) + x103(0,Inf) = 1
+ c12:	x112(0,Inf) + x113(0,Inf) + x114(0,Inf) = 1
+ c13:	xn5(0,Inf) = 1
+ c14: 	2 x32(0,Inf) - x11(0,Inf) >= 1
+ c15:	2 x32(0,Inf) - x21(0,Inf) >= 1
+ c16:	2 x72(0,Inf) + 3 x73(0,Inf) - x61(0,Inf) - 2 x62(0,Inf) >= 1
+ c17:	2 x92(0,Inf) + 3 x113(0,Inf) + 4 x114(0,Inf) - x101(0,Inf) - 2 x102(0,In	f) - 3 x103(0,Inf) >= 1
+ c18: 	4 x54(0,Inf) - 3 x43(0,Inf) >= 1
+ c19:	5 xn5(0,Inf) - 2 x92(0,Inf) - 3 x93(0,Inf) - 4 x94(0,Inf) >= 1
+ c20:	5 xn5(0,Inf) - 2 x112(0,Inf) - 3 x113(0,Inf) - 4 x114(0,Inf) >= 1
+ c21:	5 xn5(0,Inf) - 4 x54(0,Inf) >= 1
+ c22:	x11(0,Inf) + x21(0,Inf) + x61(0,Inf) + x81(0,Inf) <= 2
+ c23:	x32(0,Inf) + x62(0,Inf) + x72(0,Inf) + x82(0,Inf) <= 2
+ c24:	x73(0,Inf) + x83(0,Inf) <= 2
+ c25:	x101(0,Inf) <= 2
+ c26:	x92(0,Inf) + x102(0,Inf) + x112(0,Inf) <= 2
+ c27:	x43(0,Inf) + x93(0,Inf) + x103(0,Inf) + x113(0,Inf) <= 2
+ c28:	x54(0,Inf) + x94(0,Inf) + x114(0,Inf) <= 2
+ 
+End
